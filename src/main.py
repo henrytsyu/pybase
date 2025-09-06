@@ -1,5 +1,6 @@
-def main():
+def main() -> int:
     print("Hello from pybase!")
+    return 42
 
 
 if __name__ == "__main__":
