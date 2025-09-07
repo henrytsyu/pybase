@@ -1,4 +1,4 @@
-name: CI
+name: CI/CD
 
 on:
   push:
@@ -7,11 +7,10 @@ on:
     branches: [ "main" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -38,3 +37,7 @@ jobs:
 
     - name: Test with pytest
       run: uv run pytest tests
+
+    - name: Deploy mkdocs
+      if: github.ref == 'refs/heads/main'
+      run: mkdocs gh-deploy

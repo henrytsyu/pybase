@@ -1,0 +1,4 @@
+site_name: PyBase
+site_url: https://henrytsyu.github.io/pybase/
+theme:
+  name: material
