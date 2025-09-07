@@ -1,4 +1,10 @@
 def main() -> int:
+    """
+    Runs main.
+
+    Returns:
+        Constant value of 42.
+    """
     print("Hello from pybase!")
     return 42
 
