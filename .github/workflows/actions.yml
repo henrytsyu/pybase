@@ -40,4 +40,4 @@ jobs:
 
     - name: Deploy mkdocs
       if: github.ref == 'refs/heads/main'
-      run: mkdocs gh-deploy
+      run: uv run mkdocs gh-deploy
