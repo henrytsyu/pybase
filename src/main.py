@@ -1,3 +1,6 @@
+from loguru import logger
+
+
 def main() -> int:
     """
     Runs main.
@@ -5,7 +8,7 @@ def main() -> int:
     Returns:
         Constant value of 42.
     """
-    print("Hello from pybase!")
+    logger.info("Hello from pybase!")
     return 42
 
 
