@@ -2,3 +2,7 @@ site_name: PyBase
 site_url: https://henrytsyu.github.io/pybase/
 theme:
   name: material
+plugins:
+- search
+- mkdocstrings:
+    default_handler: python
