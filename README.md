@@ -4,6 +4,7 @@
 
 ```shell
 uv sync
+pre-commit install
 ```
 
 ## Checks
