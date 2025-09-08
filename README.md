@@ -10,8 +10,8 @@ pre-commit install
 ## Checks
 
 ```shell
-ruff check src
-ruff format src
-mypy src
+ruff check app
+ruff format app
+mypy app
 pytest tests
 ```

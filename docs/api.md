@@ -1,3 +1,3 @@
 # API Reference
 
-::: src.main
+::: app.main

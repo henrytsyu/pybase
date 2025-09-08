@@ -1,6 +1,7 @@
-from src.main import main
+from fastapi import FastAPI
+
+from app.main import app
 
 
 def test_main() -> None:
-    result: int = main()
-    assert result == 42
+    assert isinstance(app, FastAPI)
